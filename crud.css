@@ -1,0 +1,380 @@
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+	color: #2E2F5B;
+	line-height: 1.6;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+} 
+
+/* Header */
+.header	{
+	background: #f4d35e;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 40px;
+
+}
+
+
+/* Nav */
+.nav1 {
+	font-size: 16px;
+}
+
+.nav__link1 {
+	vertical-align: top;
+	color: #505581;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color 0.2s linear;
+	position: relative;}
+
+.nav__link1:hover{
+	color: #2E2F5B;
+}
+
+.nav__link1:hover:before{
+	transform: scaleX(1);
+	transition: transform 0.25s;
+}
+
+.nav__link1:before{
+	content: '';
+	background-color: #2E2F5B;
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	transform: scaleX(0);
+	transition: transform 0.25s;
+}
+
+.nav2 {
+	font-size: 16px;
+}
+
+.nav__link2 {
+	display: inline-block;
+	vertical-align: top;
+	
+	color: #505581;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color 0.2s linear;
+}  
+
+.nav__link2:hover{
+	color: #2E2F5B;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	background-color: #2E2F5B;
+  	min-width: 160px;
+  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  	z-index: 1;
+  	white-space: nowrap;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+	text-align: center;
+  	color: #faf0ca;
+  	padding: 10px 10px;
+  	text-decoration: none;
+  	display: block;
+  	transition: color 0.2s linear;
+}
+
+.dropdown-content a:hover{
+	color: #f4d35e;
+}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {display: block;}
+
+.intro {
+	min-height: 750px;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top center;
+}
+
+
+
+.intro .intro__inner {
+	justify-content: center;
+	min-height: 750px;
+	display: flex;
+	align-items: center;
+}
+
+.header-content h1{
+	font-size: 90px;
+	color: #2e2f5b;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 1;
+	margin: 20px 0;
+}
+
+.header-content h2{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 72px;
+	color: #2e2f5b;
+	margin: 0;
+}
+
+.btn__main {
+	display: inline-block;
+	padding: 10px 35px;
+	font-size: 18px;
+	border: none;
+	background-color: #f4d352;
+	color: #2e2f5b;
+	text-transform: uppercase;
+	border-radius: 5px;
+	font-weight: 700;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+	transition: all .09s ease-out;
+}
+
+.btn__main:hover {
+	box-shadow: 0 5px 10px rgba(244, 211, 82, 0.5);
+	transform: scale(1.05);
+}
+/* About */
+.about{
+	padding: 100px 0px;
+	background-color: #2e2f5b;
+}
+
+.block__title{
+	color: #ffff;
+	height: 700;
+	margin: 5px 40px;
+}
+
+.about__text{
+	margin: 5px 40px;
+
+	color: #ffff;
+	height: 400;
+}
+.about__wrapper{
+	justify-content: space-between;
+	align-items: center;
+	display: flex;
+}
+
+.about__block{
+	max-width: 700px;
+}
+
+.about__block p{
+	
+	font-weight: 400;
+	
+}
+
+.about__img{
+	margin: 5px 40px;
+	width: 480px;
+	height: 270px;
+}
+/*---------------------------------------------------*/
+
+.formfoot {
+  background-color: #faf0ca;  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center; 
+  background-color: #faf0ca;
+
+}
+
+.beforetext {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px 0px 0px 0px;
+}
+.beforetext h2{
+  font-size: 18px;
+  color: #2e2f5b;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: -150px;
+  width: 70%;
+}
+
+.beforetext h1{
+  font-family: 'Kaushan Script', cursive;
+  font-size: 50px;
+  color: #2e2f5b;
+  margin: 16px;
+}
+
+/* Footer */
+footer{
+	width: 100%;
+	height: auto;
+	background: #f4d35e;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 25px;
+}
+
+footer p{
+	color: #2e2f5b;
+	margin-bottom: 10px;
+}
+
+
+
+.soc {
+	max-width: 450px;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.soc img:hover{
+	background: #ffff;
+	border-radius: 50%;
+}
+
+footer .bc{
+	background-color: #ffff;
+	color: #2e2f5b;
+	padding: 1px 0;
+}
+
+
+p {
+	margin-top: 10px;
+}
+
+table{
+    width: 80%;
+    margin-top: 0 auto;
+    background: #2e2f5b;
+
+}
+
+table.list{
+    text-align: center;
+    width: 100%;
+    color: #fff;
+}
+
+th{
+	color: #fff;
+
+}
+
+td{
+    border: 1px solid #f4d35e;
+    text-align: left;
+    padding: 8px 15px;
+}
+
+tr:nth-child(even), table.list thread> tr{
+    background-color: rgb(204,200,200);
+}
+
+input[type="text"],input[type="email"]{
+    width:91%;
+    padding:12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165,161,161);
+    border-radius: 4px;
+}
+
+input[type="tel"]{
+    width:91%;
+    padding:12px 20px;
+    margin:8px 0;
+    display: inline-block;
+    border: 1px solid rgb(165,161,161);
+    border-radius: 4px;
+}
+
+input[type="submit"],input[type="reset"]{
+    background: #eee;
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    background: #4b99d8;
+}
+
+input[type="reset"]:hover{
+    background: #4b99d8;
+}
+
+button{
+    background: #eee;
+    padding:6px 12px;
+    margin:15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background:#4b99d8 ;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="jquery.funnyText.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="icon" href="images/MAIN.png" type="">
+
+	<title> Dream University </title>
+</head>
+
+<body>
+
+<header class="header">
+	<div class="container">
+		<div class="header__inner">
+
+			<img src="images/LOGO2.png" alt="logo" style="width: 288px; height: 64px;">
+			
+			<nav class="nav1">
+				<a class="nav__link1" href="index.html">Home</a>
+			</nav> 
+			
+			<div class="dropdown">
+				<nav class="nav2">
+					<a class="nav__link2" href="">Admission</a>
+				</nav> 
+			  	<div class="dropdown-content">
+    				<a href="admissionc.html">Admissions Committee</a>
+    				<a href="bachpage.html">Bachelor's Degree</a>
+    				<a href="magpage.html">Master's Degree</a>
+    				<a href="docpage.html">Doctoral Studies</a>
+  				</div>
+			</div>
+
+			<div class="dropdown">
+				<nav class="nav2">
+					<a class="nav__link2" href="">Students</a>
+				</nav> 
+				<div class="dropdown-content">
+    				<a href="Basic rules.html">Main rules</a>
+    				<a href="Stud.Organizations.html">Student Organizations</a>
+    				<a href="reg.html">Registration Page</a>
+  				</div>
+			</div>
+
+			<div class="dropdown">
+				<nav class="nav2">
+					<a class="nav__link2" href="">Faculties</a>
+				</nav> 
+				<div class="dropdown-content">
+    				<a href="first_fac.html">First</a>
+    				<a href="second_fac.html">Second</a>
+    				<a href="third_fac.html">Third</a>
+    				<a href="fourth_fac.html">Fourth</a>
+  				</div>
+			</div>
+
+
+			<nav class="nav1">
+				<a class="nav__link1" href="aboutus.html">About Us</a>
+			</nav> 
+		</div>
+	</div>
+</header>
+
+<header class="intro" style="background-image: url(images/fon.jpg);">
+	
+		<div class="intro__inner">
+			<div class="header-content">
+				<h2>Welcome!</h2>
+				<h1 class="animate">University <br>of Dream</h1>
+				<button onClick='location.href="#more"'class="btn__main">Learn more</button>
+			</div>
+		</div>
+	
+</header>
+
+<div class="blog-section">
+	<div class="section-content-blog">
+		<div class="title">
+			<h2>News</h2>
+		</div>
+		<div class="cards">
+			<div class="card">
+				<div class="image-section">
+					<img src="https://cdn.pastemagazine.com/www/articles/2021/05/18/anime-list-header-low.jpg" alt="">
+				</div>
+				<div class="article">
+				    <h4>Title one</h4>
+				    <p>More information</p>
+			    </div>
+			    <div class="posted-date">
+			    	<p>Dataaaaaa</p>
+			    </div>
+			</div>
+			<div class="card">
+				<div class="image-section">
+					<img src="https://cdn.pastemagazine.com/www/articles/2021/05/18/anime-list-header-low.jpg" alt="">
+				</div>
+				<div class="article">
+				    <h4>Title one</h4>
+				    <p>More information</p>
+			    </div>
+			    <div class="posted-date">
+			    	<p>Dataaaaaa</p>
+			    </div>
+			</div>
+			<div class="card">
+				<div class="image-section">
+					<img src="https://cdn.pastemagazine.com/www/articles/2021/05/18/anime-list-header-low.jpg" alt="">
+				</div>
+				<div class="article">
+				    <h4>Title one</h4>
+				    <p>More information</p>
+			    </div>
+			    <div class="posted-date">
+			    	<p>Dataaaaaa</p>
+			    </div>
+			</div>
+
+					
+		</div>
+	</div>
+</div>
+
+<header class="about" id="more">
+    <div class="container">
+    	<div class="about__wrapper">
+    		<div class="about__block">
+       			 <h1 class="block__title">University of your dream?</h1>
+       			 <p class="about__text">To begin with, let's consider the interior of dream university. Lectures are held in large and light halls equipped with modern interactive boards. Lecturers illustrate their speech with presentations. Moreover, with the help of Internet real cases held in the Court are shown on the board. Classes for group and individual work are equipped with comfortable furniture and modern computers. Besides, students can use different visual aids for learning and improving their skills. University of my dream has laboratories and legal clinics where students can achieve practical knowledge providing service to various clients who need assistance in different areas such as civil, criminal, environmental law, defense of intellectual property and so on. Also distance learning is used in my dream university. The students are provided with the assistance of their teachers online.</p>
+        	</div>
+        	<img src="images/fon.jpg" alt="" class="about__img">
+        </div>
+    </div>
+</header>
+
+<div class="admefooter">
+	<h1 class="ttitle">Our address:</h1>
+    <div class="footer-map">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A41ff7ea5ef45cbc25ab7a05eb4fea7b2d369a2f48c758c1efeb4a2c23fdefbb5&amp;source=constructor" frameborder="0"></iframe>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="jquery.funnyText.min.js"></script>
+<script>
+	$('.animate').funnyText({
+		speed: 700
+	});
+</script>
+
+<footer id="cont">
+	<div class="soc">
+		<a href="https://www.instagram.com/" target="_blank"><img src="images/icons/instagram.png" alt="inst" style="width: 40px; height: 40px;"></a>
+		<a href="https://web.telegram.org/k/" target="_blank"><img src="images/icons/telegram.png" alt="telega" style="width: 40px; height: 40px;"></a>
+		<a href="https://www.youtube.com/" target="_blank"><img src="images/icons/youtube.png" alt="yout" style="width: 40px; height: 40px;"></a>
+		<a href="https://vk.com/" target="_blank"><img src="images/icons/vk.png" alt="vk" style="width: 40px; height: 40px;"></a>
+		<a href="https://ru-ru.facebook.com/" target="_blank"><img src="images/icons/facebook.png" alt="face" style="width: 40px; height: 40px;"></a>
+	</div>
+
+	<a class="qqq" href="index.html"><img href="index.html" src="images/LOGO2.png" alt="logo" style="width: 288px; height: 64px;"></a>
+
+	<div class="bc">
+			<p>© Copyright All Rights Reserved 2022, Dream University</p>
+		</div>
+		
+</footer>
+	
+</body>
+
+</html>
